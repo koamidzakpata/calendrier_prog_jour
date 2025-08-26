@@ -20,7 +20,7 @@
 }
 
 .calendar__table--6weeks td {
-   height: 16.66%; 
+    height: 16.66%; 
 }
 
 .calendar__weekday {
@@ -33,10 +33,12 @@
     font-size: 1.3em;
 }
 
+/* Supprime l'opacité des jours hors mois */
 .calendar__overmonth .calendar__day {
     opacity: 0.3;
 }
 
+/* Bouton ajouter */
 .calendar__button {
     display: block;
     width: 55px;
@@ -47,17 +49,29 @@
     font-size: 30px;
     background-color: #007BFF;
     border-radius: 50%;
-    
     box-shadow: 0 6px 10px #0000001a, 0 1px 5px -1px #003;
     position: absolute;
     bottom: 30px;
     right: 30px;
     text-decoration: none;
-    transform: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 .calendar__button:hover {
-    text-decoration: none;
     color: #FFF;
     transform: scale(1.2);
+}
+
+/* Suppression définitive du soulignement des jours et gestion du survol */
+.calendar__day,
+.calendar__day:link,
+.calendar__day:visited,
+.calendar__day:hover,
+.calendar__day:active {
+    text-decoration: none !important;
+    color: inherit; /* garde la couleur normale */
+}
+
+.calendar__day:hover {
+    color: #007bff; /* couleur au survol */
 }
