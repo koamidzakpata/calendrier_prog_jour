@@ -22,7 +22,7 @@
 		<div class="d-flex flex-row align-items-center justify-content-between mx-sm-3">
 			<h1><?= $month->toString(); ?></h1>
 			<?php if (isset($_GET['success'])): ?>
-				<div class="container">
+				<div class="container w-50">
 					<div class="alert alert-success">
 						L'évènement à bien été enregistré
 					</div>
