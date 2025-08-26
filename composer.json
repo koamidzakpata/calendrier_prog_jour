@@ -1,0 +1,16 @@
+{
+    "name": "goldelfreeman/calendrier_prog_jour",
+    "autoload": {
+        "psr-4": {
+            "Calendar\\": "src/Calendar",
+            "App\\": "src/App"
+        }
+    },
+    "authors": [
+        {
+            "name": "junior",
+            "email": "juniordzakpata8002@gmail.com"
+        }
+    ],
+    "require": {}
+}
